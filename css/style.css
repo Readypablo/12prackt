@@ -1,0 +1,43 @@
+/*Фон для секций*/
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.section:first-child {
+  background-image: url('https://wallup.net/wp-content/uploads/2019/09/484541-architecture-art-bridges-buildings-cities-city-docks-downtown-jet-city-monorail-night-offices-port-detroit-storehouses-stores-towers-usa-michigan-graphitis-oakland-macomb-grosse-pointe-par.jpg');
+  background-size: cover;
+
+}
+
+.section:nth-child(2) {
+  background: #6784ff;
+}
+
+.section:last-child {
+  background: #76ff7c;
+}
+
+
+/*Меню*/
+.navbar {
+  min-height: 40px;
+}
+
+.nav > li > a:focus {
+  background: #fff;
+}
+.menu-navigation{
+  display: flex;
+  justify-content: center;
+  height: 70px;
+position: fixed;
+
+width: 100%;
+background: white;
+z-index: 1111111111111111111111111111111111111;
+}
+
+.container{
+height: 70px;
+background: white;
+width: 100%;
+}

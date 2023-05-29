@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Поблочная прокрутка на landing page</title>
+ 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Таблица стилей Bootstrap -->
+  <!-- <link href="libs/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet"> -->
+  <!-- Основная таблица стилей -->
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <!-- CSS файл плагина fullpage -->
+  <link href="libs/fullpage/jquery.fullPage.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  
+
+      <div class="menu-navigation" >
+       
+          <div><a href="#home">Главная</a></div>
+          <div><a href="#about">О нас</a></div>
+          <div><a href="#portfolio">Портфолио</a></div>
+   
+      </div>
+   
+  </nav>
+
+  <div id="fullpage">
+    
+    <section class="section" data-anchor="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Первый экран</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-anchor="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Второй экран</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-anchor="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Третий экран</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- Библиотека jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- js файлы плагина fullpage -->
+  <script src="libs/bootstrap/js/bootstrap.js"></script>
+  <script src="libs/fullpage/jquery.easings.min.js"></script>
+  <script src="libs/fullpage/scrolloverflow.min.js"></script>
+  <script src="libs/fullpage/jquery.fullPage.min.js"></script>
+  <!-- инициализация плагина fullpage -->
+  <script>
+    $(document).ready(function () {
+      $('#fullpage').fullpage();
+      menu: '#navigation'
+    });
+  </script>
+</body>
+
+</html>
