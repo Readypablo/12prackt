@@ -40,7 +40,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p class="text">Ночной <br>Город<br> Классный </p>
+            <p class="text">Саратов</p>  <p class="text">Место</p>  <p class="text">Блаженства</p> 
             <img src="img/1.png" alt="" id="vertolet">
           </div>
         </div>
@@ -50,8 +50,26 @@
     <section class="section" data-anchor="about">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <p>Второй экран</p>
+          <div class="col-md-121">
+            
+            <div class="foto-text"> 
+              <h1>Произошла кража!!!</h1>
+
+              <div class="main_box">
+                <div class="img"></div>
+                <div class="mouse"></div>
+
+            </div>
+
+            </div>
+
+
+            <div class="text-moon"> 
+
+              <p>Событие, которое произошло в городе Саратов, потрясло местную общественность. Известно, что неизвестные похитили рабочего по имени Ибрагима. Для многих местных жителей такое обращение с человеком стало настоящим шоком.</p> 
+              <p id="moon-right-text">Сейчас полиция активно работает над расследованием этого дела. Говорят, что у похитителей была детально продуманная план, и они действовали быстро и решительно. </p>
+           
+            </div>
           </div>
         </div>
       </div>
@@ -82,6 +100,38 @@
       menu: '#navigation'
     });
   </script>
+
+<script>
+  
+  // Select the container box and the 
+  // mouse placeholder
+  let main = document.querySelector('.main_box');
+  let mouse = document.querySelector('.mouse');
+
+  // Add an event listener for detecting
+  // the movement of the mouse
+  main.addEventListener('mousemove',
+      (e) => {
+
+          // Use a circle with a clipPath
+          // and the offsetX and offsetY property
+          mouse.style.clipPath =
+  `circle(10em at ${e.offsetX}px ${e.offsetY}px)`;
+      });
+</script>
+<div class="preloader">
+  <span class="loader"></span>
+</div>
+<script>
+  
+  window.onload = function() {
+      document.querySelector('.preloader').classList.add("preloader-remove");
+  };</script>
+
+
+ <!-- прелоадер -->
+
+
 </body>
 
 </html>
