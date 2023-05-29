@@ -32,12 +32,32 @@ body{
 position: fixed;
 
 width: 100%;
-background: white;
+background: black;
 z-index: 1111111111111111111111111111111111111;
+
+}
+
+.menu-navigation>div >a{
+  color: white;
 }
 
 .container{
 height: 70px;
-background: white;
+
 width: 100%;
+}
+#vertolet{
+  width: 900px;
+  height:400px;
+  transform: rotate(15deg);
+opacity: 0.9;
+}
+.text{
+margin-top: -300px;
+font-size: 80px;
+margin-left: 30px;
+
+font-weight: 900;
+line-height: 60px;
+color: rgb(206, 206, 206);
 }
